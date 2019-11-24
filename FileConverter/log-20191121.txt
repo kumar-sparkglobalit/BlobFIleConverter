@@ -1,0 +1,126 @@
+2019-11-21 00:26:46.666 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values  
+2019-11-21 00:26:46.923 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 00:26:46.941 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" - Validation state: Valid
+2019-11-21 00:26:46.949 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.6528ms.
+2019-11-21 00:26:46.967 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2019-11-21 00:26:47.227 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 293.8593ms
+2019-11-21 00:26:47.240 +05:30 [Information] Request finished in 587.7606ms 200 application/json; charset=utf-8
+2019-11-21 00:26:50.908 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values/2  
+2019-11-21 00:26:50.939 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 00:26:50.977 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" with arguments (["0"]) - Validation state: Valid
+2019-11-21 00:26:50.980 +05:30 [Information] starting reading the blob file
+2019-11-21 00:26:51.002 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 63.0471ms
+2019-11-21 00:26:51.068 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.FormatException: Settings must be of the form "name=value".
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.<>c.<Parse>b__97_0(String err) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 529
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.ParseStringIntoSettings(String connectionString, Action`1 error) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 995
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.ParseImpl(String connectionString, CloudStorageAccount& accountInformation, Action`1 error) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 815
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.Parse(String connectionString) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 529
+   at FileConverter.BlobReader.BlobReader.GetCloudFile() in F:\freelance-support\FileConverter\FileConverter\CloudProviders\BlobReader.cs:line 23
+   at FileConverter.Controllers.ValuesController.Get(Int32 blobId) in F:\freelance-support\FileConverter\FileConverter\Controllers\ValuesController.cs:line 41
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-21 00:26:51.178 +05:30 [Information] Request finished in 266.5483ms 500 text/html; charset=utf-8
+2019-11-21 07:23:10.248 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values  
+2019-11-21 07:23:10.248 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:52595/  0
+2019-11-21 07:23:10.527 +05:30 [Information] Request finished in 259.4205ms 200 
+2019-11-21 07:23:11.132 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 07:28:27.212 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" - Validation state: Valid
+2019-11-21 07:28:53.521 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 26262.7182ms.
+2019-11-21 07:28:53.575 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2019-11-21 07:28:54.097 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 342936.558ms
+2019-11-21 07:28:54.297 +05:30 [Information] Request finished in 343921.8616ms 200 application/json; charset=utf-8
+2019-11-21 07:28:54.824 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/favicon.ico  
+2019-11-21 07:28:54.837 +05:30 [Information] Request finished in 34.9977ms 404 
+2019-11-21 07:29:11.252 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values/2  
+2019-11-21 07:29:11.310 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 07:29:11.417 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" with arguments (["0"]) - Validation state: Valid
+2019-11-21 07:29:41.821 +05:30 [Information] starting reading the blob file
+2019-11-21 07:31:10.258 +05:30 [Information] completed the operation for blob updation at:21-Nov-19 07:31:10 AM
+2019-11-21 07:37:34.432 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 503007.117ms.
+2019-11-21 07:37:34.477 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[FileConverter.ViewModels.OutputBlobFile, FileConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-11-21 07:37:34.549 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 503223.6897ms
+2019-11-21 07:37:34.559 +05:30 [Information] Request finished in 503304.2569ms 200 application/json; charset=utf-8
+2019-11-21 07:37:37.794 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values/2  
+2019-11-21 07:37:37.800 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 07:37:37.808 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" with arguments (["0"]) - Validation state: Valid
+2019-11-21 07:37:39.184 +05:30 [Information] starting reading the blob file
+2019-11-21 07:37:39.195 +05:30 [Information] completed the operation for blob updation at:21-Nov-19 07:37:39 AM
+2019-11-21 07:37:41.082 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 3270.0529ms.
+2019-11-21 07:37:41.086 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[FileConverter.ViewModels.OutputBlobFile, FileConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-11-21 07:37:41.101 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 3288.858ms
+2019-11-21 07:37:41.125 +05:30 [Information] Request finished in 3311.4757ms 200 application/json; charset=utf-8
+2019-11-21 07:39:32.686 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values  
+2019-11-21 07:39:32.727 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 07:39:32.765 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" - Validation state: Valid
+2019-11-21 07:42:06.502 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 153709.284ms.
+2019-11-21 07:42:06.508 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2019-11-21 07:42:06.539 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 153776.941ms
+2019-11-21 07:42:06.552 +05:30 [Information] Request finished in 153866.8603ms 200 application/json; charset=utf-8
+2019-11-21 07:44:07.835 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values  
+2019-11-21 07:44:07.835 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:52595/  0
+2019-11-21 07:44:08.062 +05:30 [Information] Request finished in 256.8927ms 200 
+2019-11-21 07:44:08.718 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 07:44:13.640 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" - Validation state: Valid
+2019-11-21 07:44:21.359 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 7690.1292ms.
+2019-11-21 07:44:21.383 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2019-11-21 07:44:21.798 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 12979.3978ms
+2019-11-21 07:44:21.978 +05:30 [Information] Request finished in 14026.5192ms 200 application/json; charset=utf-8
+2019-11-21 07:44:26.516 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values/2  
+2019-11-21 07:44:26.565 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 07:44:26.642 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" with arguments (["0"]) - Validation state: Valid
+2019-11-21 07:44:33.751 +05:30 [Information] starting reading the blob file
+2019-11-21 07:45:26.488 +05:30 [Information] completed the operation for blob updation at:21-Nov-19 07:45:26 AM
+2019-11-21 07:45:35.003 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 68355.5983ms.
+2019-11-21 07:45:35.026 +05:30 [Information] Executing ObjectResult, writing value of type '"null"'.
+2019-11-21 07:45:35.031 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 68461.8546ms
+2019-11-21 07:45:35.046 +05:30 [Information] Request finished in 68520.9663ms 204 
+2019-11-21 08:15:00.696 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values  
+2019-11-21 08:15:01.037 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 08:15:01.059 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" - Validation state: Valid
+2019-11-21 08:15:01.068 +05:30 [Information] Executed action method "FileConverter.Controllers.ValuesController.Get (FileConverter)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.3692ms.
+2019-11-21 08:15:01.092 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2019-11-21 08:15:01.318 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 270.2042ms
+2019-11-21 08:15:01.333 +05:30 [Information] Request finished in 651.0811ms 200 application/json; charset=utf-8
+2019-11-21 08:15:18.102 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:52595/api/values/2  
+2019-11-21 08:15:18.139 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "FileConverter.Controllers.ValuesController.Get (FileConverter)"
+2019-11-21 08:15:18.182 +05:30 [Information] Executing action method "FileConverter.Controllers.ValuesController.Get (FileConverter)" with arguments (["0"]) - Validation state: Valid
+2019-11-21 08:15:18.186 +05:30 [Information] starting reading the blob file
+2019-11-21 08:15:18.297 +05:30 [Information] Executed action "FileConverter.Controllers.ValuesController.Get (FileConverter)" in 158.4022ms
+2019-11-21 08:15:18.940 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.FormatException: Settings must be of the form "name=value".
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.<>c.<Parse>b__97_0(String err) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 529
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.ParseStringIntoSettings(String connectionString, Action`1 error) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 995
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.ParseImpl(String connectionString, CloudStorageAccount& accountInformation, Action`1 error) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 815
+   at Microsoft.WindowsAzure.Storage.CloudStorageAccount.Parse(String connectionString) in C:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\Common\CloudStorageAccount.cs:line 529
+   at FileConverter.BlobReader.BlobReader.GetCloudFile() in F:\freelance-support\FileConverter\RajendarPrasadCloudApplication\FileConverter\CloudProviders\BlobReader.cs:line 23
+   at FileConverter.Controllers.ValuesController.Get(Int32 blobId) in F:\freelance-support\FileConverter\RajendarPrasadCloudApplication\FileConverter\Controllers\ValuesController.cs:line 41
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-21 08:15:19.234 +05:30 [Information] Request finished in 1131.5869ms 500 text/html; charset=utf-8

@@ -1,0 +1,30 @@
+  [
+    {
+      "BankCode": "bank1",
+      "PostalCode": "p1",
+      "ReferenceID": "r1",
+      "State": "s1",
+      "SupplierStatus": "ss1"
+    },
+    {
+      "BankCode": "bank2",
+      "PostalCode": "p2",
+      "ReferenceID": "r2",
+      "State": "s2",
+      "SupplierStatus": "ss2"
+    },
+    {
+      "BankCode": "bank3",
+      "PostalCode": "p3",
+      "ReferenceID": "r3",
+      "State": "s3",
+      "SupplierStatus": "ss3"
+    },
+    {
+      "BankCode": "bank4",
+      "PostalCode": "p4",
+      "ReferenceID": "r4",
+      "State": "s4",
+      "SupplierStatus": "ss4"
+    }
+  ]
